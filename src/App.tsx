@@ -8,13 +8,12 @@
 import React from 'react';
 import {SafeAreaView} from 'react-native';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
-import {Text} from '@rneui/themed';
 
 function App(): React.JSX.Element {
   return (
     <SafeAreaProvider>
       <SafeAreaView>
-        <Text>테스트</Text>
+        <></>
       </SafeAreaView>
     </SafeAreaProvider>
   );

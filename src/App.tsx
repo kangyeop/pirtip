@@ -6,17 +6,18 @@
  */
 
 import React from 'react';
-import {SafeAreaView} from 'react-native';
 import {SafeAreaProvider} from 'react-native-safe-area-context';
+import {NavigationContainer} from '@react-navigation/native';
+import {AppStack} from './navigators/AppStack';
 
-function App(): React.JSX.Element {
+const App: React.FC = () => {
   return (
     <SafeAreaProvider>
-      <SafeAreaView>
-        <></>
-      </SafeAreaView>
+      <NavigationContainer>
+        <AppStack />
+      </NavigationContainer>
     </SafeAreaProvider>
   );
-}
+};
 
 export default App;

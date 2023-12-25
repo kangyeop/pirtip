@@ -32,18 +32,6 @@
 		<false/>
 		<key>NSAllowsLocalNetworking</key>
 		<true/>
-		<key>NSExceptionDomains</key> 
-			<dict>
-				<key>https://map.yeop2.world</key>
-				<dict>
-					<key>NSExceptionAllowsInsecureHTTPLoads</key>
-					<true/>
-					<key>NSExceptionRequiresForwardSecrecy</key>
-					<true/>
-					<key>NSIncludesSubdomains</key>
-					<true/>
-				</dict>
-			</dict>
 	</dict>
 	<key>NSLocationWhenInUseUsageDescription</key>
 	<string></string>

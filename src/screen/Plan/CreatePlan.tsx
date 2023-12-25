@@ -1,7 +1,6 @@
-import {Text} from '@rneui/base';
-import {Input} from '@rneui/themed';
-import React from 'react';
-import {View} from 'react-native';
+import { Text } from '@rneui/base';
+import { Input } from '@rneui/themed';
+import { View } from 'react-native';
 
 export const CreatePlan: React.FC = () => {
   return (
@@ -12,7 +11,8 @@ export const CreatePlan: React.FC = () => {
           flexDirection: 'row',
           alignItems: 'center',
           padding: 10,
-        }}>
+        }}
+      >
         <Text>일정 이름</Text>
         <Input />
       </View>

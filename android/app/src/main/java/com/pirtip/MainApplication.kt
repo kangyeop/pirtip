@@ -1,5 +1,6 @@
 package com.pirtip
 
+import com.oblador.vectoricons.VectorIconsPackage;
 import android.app.Application
 import com.facebook.react.PackageList
 import com.facebook.react.ReactApplication
@@ -19,7 +20,7 @@ class MainApplication : Application(), ReactApplication {
         override fun getPackages(): List<ReactPackage> {
           // Packages that cannot be autolinked yet can be added manually here, for example:
           // packages.add(new MyReactNativePackage());
-          return PackageList(this).packages
+          return PackageList(this).packages.add(new VectorIconsPackage());
         }
 
         override fun getJSMainModuleName(): String = "index"

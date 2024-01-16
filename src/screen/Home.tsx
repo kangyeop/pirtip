@@ -1,14 +1,14 @@
 import { Button } from '@rneui/base';
-import { View } from 'react-native';
 import { useLinkTo } from '@react-navigation/native';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 export const Home = () => {
   const linkTo = useLinkTo();
   return (
-    <View>
-      <Button onPress={() => linkTo('/CreatePlan')} size="lg">
+    <SafeAreaView>
+      <Button onPress={() => linkTo('/SelectCity')} size="lg">
         Create Plan
       </Button>
-    </View>
+    </SafeAreaView>
   );
 };
